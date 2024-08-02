@@ -1,4 +1,4 @@
-package me.dio.academia.academia_digital.infra.deserializer;
+package me.dio.academia.academia_digital.infra.jackson.deser;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.DeserializationContext;

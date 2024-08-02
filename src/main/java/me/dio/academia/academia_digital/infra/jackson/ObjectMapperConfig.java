@@ -1,11 +1,14 @@
-package me.dio.academia.academia_digital.infra;
+package me.dio.academia.academia_digital.infra.jackson;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
-import me.dio.academia.academia_digital.infra.deserializer.LocalDateDeserializer;
-import me.dio.academia.academia_digital.infra.deserializer.LocalDateTimeDeserializer;
-import me.dio.academia.academia_digital.infra.serializer.LocalDateSerializer;
-import me.dio.academia.academia_digital.infra.serializer.LocalDateTimeSerializer;
+import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+import me.dio.academia.academia_digital.infra.jackson.deser.LocalDateDeserializer;
+import me.dio.academia.academia_digital.infra.jackson.deser.LocalDateTimeDeserializer;
+import me.dio.academia.academia_digital.infra.jackson.ser.LocalDateSerializer;
+import me.dio.academia.academia_digital.infra.jackson.ser.LocalDateTimeSerializer;
 import org.springframework.boot.autoconfigure.jackson.Jackson2ObjectMapperBuilderCustomizer;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 

@@ -1,4 +1,4 @@
-package me.dio.academia.academia_digital.infra.serializer;
+package me.dio.academia.academia_digital.infra.jackson.ser;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.databind.SerializerProvider;
